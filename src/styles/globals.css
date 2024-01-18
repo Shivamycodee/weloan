@@ -105,3 +105,38 @@ a {
     color-scheme: dark;
   }
 }
+
+
+  /* wallet connect/dissconnect button */
+
+
+ .button-content {
+  position: relative;
+  overflow: hidden;
+  width: fit-content;
+}
+
+.wallet-address,
+.disconnect-text {
+  transition: opacity 0.3s, visibility 0.3s;
+  display: inline-block;
+  white-space: nowrap;
+}
+
+.button-content:hover .wallet-address {
+  opacity: 0;
+  visibility: hidden;
+}
+
+.disconnect-text {
+  opacity: 0;
+  visibility: hidden;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.button-content:hover .disconnect-text {
+  opacity: 1;
+  visibility: visible;
+}
